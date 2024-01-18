@@ -1,0 +1,178 @@
+body {
+   background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* modal-start */
+
+.modal-start,
+.modal-subscribe {
+   width: 576px;
+   height: 316px;
+   border: 1px solid black;
+   border-radius: 20px;
+
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+   display: flex;
+   background: white;
+   justify-content: center;
+   align-items: center;
+
+   display: none;
+}
+
+.modal-window {
+   width: 392px;
+   height: 223px;
+}
+
+.modal-title {
+   font-family: "Inter";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 15px;
+   text-align: center;
+}
+
+.modal-name {
+   padding-top: 42px;
+
+   font-family: "Inter";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 15px;
+   text-align: center;
+}
+
+.modal-window form {
+   width: 169px;
+   height: 88px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   margin: 18px auto 0;
+}
+
+.modal-window form input {
+   width: 169px;
+   height: 35px;
+   padding: 10px;
+
+   background: #d7d7d7;
+   border-radius: 20px;
+   border: none;
+   outline: none;
+}
+
+.modal-window form input::placeholder,
+.modal-window form input {
+   font-family: "Montserrat Alternates";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 15px;
+   color: #7e7e7e;
+}
+
+.modal-window form button {
+   width: 105px;
+   height: 35px;
+   background: #000000;
+   border-radius: 20px;
+   color: white;
+   font-family: "Montserrat Alternates";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 15px;
+}
+
+.modal-start i:nth-child(n + 3) {
+   width: 30px;
+   height: 30px;
+   position: absolute;
+   background-repeat: no-repeat;
+}
+
+.icon-close {
+   background: url(../img/icon/iconClose.svg);
+   right: 30px;
+   top: 30px;
+   width: 15px;
+   height: 15px;
+   position: absolute;
+   background-repeat: no-repeat;
+}
+
+.icon-bar {
+   background: url(../img/icon/iconBar.svg);
+   left: 505px;
+   top: 154px;
+}
+
+.icon-gameBar {
+   background: url(../img/icon/iconGameBar.svg);
+   left: 461px;
+   top: 230px;
+}
+
+.icon-puzzle {
+   background: url(../img/icon/iconPuzzle.svg);
+   left: 85px;
+   top: 230px;
+}
+
+.icon-sword {
+   background: url(../img/icon/iconSword.svg);
+   left: 41px;
+   top: 154px;
+}
+
+/* modal-subscribe */
+
+.modal-subscribe {
+   width: 463px;
+   height: 245px;
+}
+
+.modal-subscribe i:nth-child(n + 3) {
+   width: 30px;
+   height: 30px;
+   position: absolute;
+   background-repeat: no-repeat;
+}
+
+.modal-subscribe .icon-bar {
+   left: 391px;
+   top: 69px;
+}
+
+.modal-subscribe .icon-gameBar {
+   left: 347px;
+   top: 145px;
+}
+
+.modal-subscribe .icon-puzzle {
+   left: 87px;
+   top: 145px;
+}
+
+.modal-subscribe .icon-sword {
+   left: 43px;
+   top: 69px;
+}
+
+.modal-subscribe .title {
+   position: absolute;
+   width: 188px;
+   height: 24px;
+   left: 138px;
+   top: 83px;
+   text-align: center;
+}

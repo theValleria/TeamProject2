@@ -1,0 +1,80 @@
+.rock-scissors-paper{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.r-s-p-title{
+    padding-top: 36px;
+
+    font-family: Montserrat Alternates;
+    text-align: center;
+    font-weight: 400px;
+    size: 16px;
+    line-height: 19.5px;
+}
+
+.r-s-p-main{
+    padding-top: 36px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons{
+    width: 256px;
+    height: 60px;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 36px;
+}
+
+.r-s-p-main p{
+    font-family: Montserrat Alternates;
+    font-weight: 400px;
+    font-size: 12px;
+    line-height: 14.63px;
+
+    color: black;
+    text-align: center;
+
+    margin-bottom: 36px;
+}
+
+.r-s-p-result-btn {
+    width: 182px;
+    height: 35px;
+
+    margin-bottom: 36px;
+
+    border: 1px solid black;
+    border-radius: 20px;
+
+    padding: 10px, 20px;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 1);
+
+    color: white;
+    font-family: Montserrat Alternates;
+    font-weight: 400px;
+    font-size: 12px;
+    line-height: 14.63px;
+}
+
+.r-s-p-score-table{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: absolute;
+    right: 20%;
+}
+
+.r-s-p-score{
+    display: flex;
+    flex-direction: row;
+}

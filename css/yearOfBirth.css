@@ -1,0 +1,104 @@
+.title {
+    font-family: Montserrat Alternates;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.seperator{
+    width: 536px;
+    height: 2px;
+    background-color: black;
+}
+
+
+.icon {
+    position: absolute;
+    font-size: 15px;
+    background-color: black;
+    color: azure;
+    height: 100%;
+    width: 35px;
+    text-align: center;
+    vertical-align: middle;
+    right: 0;
+
+}
+
+.icon::before {
+    display: flex;
+    height: 100%;
+    width: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-search {
+    position: relative;
+    width: 215px;
+    height: 35px;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+
+    box-shadow: 3px 4px 0 0 rgb(194, 194, 194);
+}
+
+.input-search>input {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #d7d7d7;
+
+    border: none;
+    outline: none;
+}
+
+
+#result {
+    font-family: Montserrat Alternates;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: right;
+
+    margin-left: 100px;
+    margin-top: 9px;
+
+    display: flex;
+    align-items: center;
+
+
+    width: 230px;
+    height: 15px;
+
+    color: rgba(3, 153, 0, 1);
+}
+
+.yearOfBirthTitle{
+    font-family: "Montserrat Alternates";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+
+    margin-top: 36px;
+}
+
+.res {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 36px;
+}

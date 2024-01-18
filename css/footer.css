@@ -1,0 +1,90 @@
+footer {
+   width: 1440px;
+   height: 220px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background: #ffffff;
+}
+
+.footer-logo {
+   width: 165px;
+   height: 70px;
+   background-image: url(../img/logo.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.footer-info {
+   font-family: "Montserrat Alternates";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 170%;
+}
+
+.form-subscribe {
+   width: 347px;
+   height: 60px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+footer form {
+   width: 347px;
+   height: 35px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.form-subscribe input {
+   width: 204px;
+   height: 35px;
+   padding: 10px;
+
+   background: #d7d7d7;
+   border-radius: 20px;
+   border: none;
+}
+
+.form-subscribe input::placeholder,
+.form-subscribe input {
+   font-family: "Montserrat Alternates";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 15px;
+   color: #7e7e7e;
+}
+
+.form-subscribe button {
+   width: 107px;
+   height: 35px;
+   background: #000000;
+   border-radius: 20px;
+   color: white;
+   font-family: "Montserrat Alternates";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 15px;
+}
+
+.form-info {
+   font-family: "Montserrat Alternates";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 6px;
+   line-height: 7px;
+}
+
+.dark {
+   background: #424242;
+   color: white;
+}
+
+.white {
+   background: #ffffff;
+   color: black;
+}

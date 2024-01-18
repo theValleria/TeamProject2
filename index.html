@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="./css/reset.css" />
+      <link rel="stylesheet" href="./css/style.css" />
+
+   </head>
+   <body>
+      <header class="white" id="themeMode">
+         <div class="logo"></div>
+         <nav>
+            <ul>
+               <li>Інтерактив</li>
+               <li>Наша команда</li>
+               <li>Контакти</li>
+            </ul>
+         </nav>
+
+         <div class="theme">
+            <label class="switch">
+               <input type="checkbox" id="btnSwitch" />
+               <span class="slider round"></span>
+            </label>
+            <p>Вітаємо, <span>User</span></p>
+         </div>
+      </header>
+
+      <section>
+         <main class="container white" id="themeMode">
+            
+            <h1 class="title">Популярні інтерактивні ігри</h1>
+
+            <div class="seperator"></div>
+            <!-- ----------------------------1---------------------------------- -->
+            <h1 class="yearOfBirthTitle">Перевір в який рік ти народився</h1>
+            
+            <div class="res">
+               <div class="input-search">
+                  <input type="text" id="birthYearInput" placeholder="Введіть рік народження">
+                  <i class="fa fa-search icon" aria-hidden="true" onclick="checkLeapYear()"></i>
+               </div>
+            
+               <p id="result">Ви народились у...</p>
+            </div>
+
+            <div class="seperator"></div>
+            <!-- ----------------------------2---------------------------------- -->
+
+            <!-- ----------------------------3---------------------------------- -->
+            <h1 class="r-s-p-title">Камінь - ножиці - папір</h1>
+
+            <div class="rock-scissors-paper">
+               
+               <div class="r-s-p-main">
+                  <div class="buttons">
+                     <img src="./img/rock-scissors-paper/rock.png" class="rock" alt="rock">
+                     <img src="./img/rock-scissors-paper/scissors.png" class="scissors" alt="scissors">
+                     <img src="./img/rock-scissors-paper/paper.png" class="paper" alt="paper">
+                  </div>
+               
+                  <p class="r-s-p-result">Результат</p>
+                  <button class="r-s-p-result-btn">Варіант комп’ютера</button>
+               </div>
+               
+               <div class="r-s-p-score-table">
+                  <p>Рахунок:</p>
+                  <div class="r-s-p-score">
+                     <p>Комп’ютер - </p>
+                     <p class="computer-score"> 0</p>
+                  </div>
+
+                  <div class="r-s-p-score">
+                     <p>Ви - </p>
+                     <p class="user-score"> 0</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="seperator"></div>
+            <!-- ----------------------------4---------------------------------- -->
+
+         </main>
+      </section>
+
+      <footer>
+         <div class="footer-logo"></div>
+         <p class="footer-info">
+            Тел: +38 (123) 456 78 90 <br />
+            E-Mail: codingmagic@gmail.com <br />
+            Facebook: CodingMagic <br />
+            Twitter: CodingMagic <br />
+            Instagram: CodingMagic <br />
+         </p>
+
+         <div class="form-subscribe">
+            <form class="form">
+               <input type="text" placeholder="Ваша ел. адреса..." />
+
+               <button type="submit" >Підписатись</button>
+            </form>
+            <p class="form-info">
+               *Підписавшись, Ви зможете ортимувати інформаццію про новинки на
+               сайті
+            </p>
+         </div>
+      </footer>
+
+      <div class="modal-start">
+         <div class="modal-window">
+            <p class="modal-title">
+               Привіт! <br />
+               Ви потрапили на сайт інтерактивних ігор та завдань <br />
+               Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
+               <br />
+               Бажаємо Вам гарно провести час!
+            </p>
+
+            <p class="modal-name">Введіть своє ім’я:</p>
+
+            <form class="">
+               <input type="text" name="nameUser" placeholder="Ваше ім’я..." />
+
+               <button type="submit">Зберегти</button>
+            </form>
+         </div>
+
+         <i class="icon-close"></i>
+         <i class="icon-bar"></i>
+         <i class="icon-gameBar"></i>
+         <i class="icon-puzzle"></i>
+         <i class="icon-sword"></i>
+      </div>
+
+      <div class="modal-subscribe">
+         <p class="title">Дякую за підписку!</p>
+         <i class="icon-close"></i>
+         <i class="icon-bar"></i>
+         <i class="icon-gameBar"></i>
+         <i class="icon-puzzle"></i>
+         <i class="icon-sword"></i>
+      </div>
+
+      <script src="./js/RockScissorsPaper.js"></script>
+      <script src="./js/yearOfBirth.js"></script>
+   </body>
+</html>

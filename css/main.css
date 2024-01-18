@@ -1,0 +1,490 @@
+section {
+   max-width: 1440px;
+   height: 3202px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-image: url(../img/backgroundLeft.svg),
+      url(../img/backgroundRight.svg);
+   background-position: left, right;
+   background-repeat: no-repeat;
+}
+
+.container {
+   width: 1090px;
+   height: 3202px;
+   border: 2px solid black;
+   background: #ffffff;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.container p {
+   font-family: "Montserrat Alternates";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 20px;
+   /* identical to box height */
+
+   color: #000000;
+}
+
+hr {
+   width: 536px;
+   margin-top: 36px;
+   margin-bottom: 36px;
+}
+
+main .title-main {
+   font-family: "Montserrat Alternates";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 29px;
+   text-align: center;
+   padding-top: 36px;
+}
+
+/* .container > p{
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+} */
+
+.fa-search {
+   background: url("../img/icon/icon-search.png") no-repeat;
+}
+
+.inputWidthIcon {
+   position: relative;
+   width: 215px;
+}
+
+.inputWidthIcon input {
+   padding: 10px 45px 10px 10px;
+   border-radius: 20px;
+   width: 100%;
+   height: 35px;
+   background: #d7d7d7;
+}
+
+input::placeholder {
+   font-family: "Montserrat Alternates";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 15px;
+}
+
+.inputWidthIcon i {
+   position: absolute;
+   right: 0px;
+   width: 35px;
+   height: 35px;
+   z-index: 2;
+}
+
+/* TASK 1 */
+main .card {
+   height: 91px;
+   width: 576px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.card-task {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+/* TASK2 */
+.card:nth-of-type(2) .inputWidthIcon {
+   width: 150px;
+}
+
+/* TASK3 */
+
+.card:nth-of-type(3) {
+   height: 238px;
+}
+
+.icon-task3 {
+   width: 256px;
+   height: 60px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.icon-task3 i {
+   display: block;
+   width: 60px;
+   height: 60px;
+}
+
+.icon-rock {
+   background: url(/img/icon/rock.png) no-repeat;
+}
+
+.icon-scissors {
+   background: url(/img/icon/scissors.png) no-repeat;
+}
+
+.icon-paper {
+   background: url(/img/icon/paper.png) no-repeat;
+}
+
+.iconWidthTotal {
+   position: relative;
+}
+
+.iconWidthTotal .total {
+   position: absolute;
+   right: -166px;
+   bottom: 0px;
+}
+
+.btn-task3 {
+   padding: 10px 20px;
+   background: #000000;
+   border-radius: 20px;
+
+   color: #ffffff;
+}
+
+/* TASK4 */
+.card:nth-of-type(4) {
+   height: 116px;
+   width: 629px;
+}
+
+.card-calculate {
+   width: 629px;
+   height: 60px;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.card-calculate input {
+   width: 135px;
+   height: 35px;
+   padding: 10px 20px;
+   background: #d7d7d7;
+   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+   border-radius: 20px;
+   border: none;
+   outline: none;
+}
+
+.calculate-symbols {
+   width: 62px;
+   height: 60px;
+
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-content: space-between;
+}
+
+.card-calculate p {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 25px;
+   height: 25px;
+
+   color: #ffffff;
+   background: #000000;
+   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+   border-radius: 20px;
+}
+
+/* TASK5 */
+
+.card:nth-of-type(5) {
+   width: 392px;
+   height: 91px;
+}
+
+.card:nth-of-type(5) .inputWidthIcon {
+   width: 150px;
+}
+
+.card:nth-of-type(5) .card-task p:nth-of-type(1) {
+   display: inline;
+   width: 100px;
+   height: 0px;
+   border: 1px dashed #000000;
+}
+
+/* TASK7 */
+.card:nth-of-type(6) {
+   width: 720px;
+   height: 276px;
+}
+
+/* .card:nth-of-type(6) {
+   position: relative;
+} */
+
+.card:nth-of-type(6) .card-football {
+   /* position: relative;
+   width: 720px;
+   height: 220px;
+
+   background: #5abb58;
+   */
+   border: 2px solid #000000;
+   border-radius: 37px;
+   cursor: url(../img/mouse.svg), auto;
+}
+
+.card:nth-of-type(6) .football-ball {
+   position: absolute;
+   background: url(../img/ball.svg) no-repeat;
+   top: 85px;
+   left: 92px;
+   width: 50px;
+   height: 50px;
+   z-index: 2;
+}
+
+/* TASK8 */
+.card:nth-of-type(7) {
+   width: 481px;
+   height: 142px;
+}
+
+.card:nth-of-type(7) .inputCheck {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+}
+
+.card:nth-of-type(7) .inputCheck input {
+   border: none;
+   outline: none;
+   padding: 10px 20px;
+   width: 135px;
+   height: 35px;
+   background: #d7d7d7;
+   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+   border-radius: 20px;
+}
+
+.card:nth-of-type(8) {
+   position: relative;
+   /* border: 2px solid black; */
+   width: 315px;
+   /* height: 305px; */
+   height: 505px;
+}
+
+.card:nth-of-type(8) .slider-img {
+   border: 2px solid black;
+   width: 150px;
+   height: 150px;
+   border-radius: 20px;
+   /* position: relative; */
+   overflow: hidden;
+}
+.card:nth-of-type(8) .slider-line img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+.card:nth-of-type(8) .slider-line {
+   display: flex;
+   position: relative;
+   left: 0;
+   transition: all ease 1s;
+
+   border-radius: 20px;
+}
+.card:nth-of-type(8) .nameStudent {
+   font-family: "Montserrat Alternates";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 17px;
+}
+
+.card:nth-of-type(8) .infoStudent {
+   display: block;
+   width: 315px;
+   height: 15px;
+
+   font-family: "Montserrat Alternates";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 15px;
+}
+
+.slider-img {
+   position: relative;
+}
+
+.card:nth-of-type(8) .arrow {
+   position: absolute;
+   top: 120px;
+}
+
+.card:nth-of-type(8) .left {
+   left: -298px;
+}
+
+.card:nth-of-type(8) .right {
+   left: 558px;
+}
+
+.itc-slider__indicators {
+   display: flex;
+   justify-content: space-between;
+   width: 174px;
+   height: 3px;
+}
+
+.itc-slider__indicator {
+   width: 18px;
+   height: 3px;
+   background: #d9d9d9;
+   border-radius: 3px;
+}
+
+.indicator-active {
+   width: 30px;
+   background: #797979;
+}
+
+/* .itc-slider__indicators {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 15;
+   display: flex;
+   justify-content: center;
+   margin: 0 15%;
+   padding-left: 0;
+   list-style: none;
+}
+
+.itc-slider__indicator {
+   flex: 0 1 auto;
+   box-sizing: content-box;
+   width: 30px;
+   height: 5px;
+   margin-right: 3px;
+   margin-left: 3px;
+   text-indent: -999px;
+   background-color: rgb(255 255 255 / 50%);
+   background-clip: padding-box;
+   border-top: 15px solid transparent;
+   border-bottom: 15px solid transparent;
+   cursor: pointer;
+}
+
+.itc-slider__indicator_active {
+   background-color: rgb(255 255 255 / 90%);
+} */
+/* .calculate-symbols .icon-add{
+        background: url(../img/icon/calculate/add.svg) no-repeat;
+    }
+
+    .calculate-symbols .icon-mul{
+        background: url(../img/icon/calculate/mul.svg) no-repeat;
+    }
+
+    .calculate-symbols .icon-sub{
+        background: url(../img/icon/calculate/sub.svg) no-repeat;
+    }
+
+    .calculate-symbols .icon-divide{
+        background: url(../img/icon/calculate/divide.svg) no-repeat;
+    } */
+/* 
+.task1, .task2{
+    width: 576px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 46px;
+}
+
+.task1, .task2 p {
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.task2 .inputWidthIcon input{
+    width: 150px;
+}
+.task2 .inputWidthIcon{
+    width: 150px;
+}
+
+.icon-task3{
+    width: 256px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+
+.icon-task3 i{
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+
+.icon-rock{
+    background: url(/img/rock.png) no-repeat;
+}
+
+.icon-scissors{
+    background: url(/img/scissors.png) no-repeat;
+}
+
+.icon-paper{
+    background: url(/img/paper.png) no-repeat;
+}
+
+.task3{
+    margin: 36px 0;
+    
+}
+
+.task3-input{
+    width: 182px;
+    
+    height: 35px;
+    background: #000000;
+    border-radius: 20px;   
+    padding: 10px 20px;
+}
+
+.task3-input::placeholder{
+    font-family: 'Montserrat Alternates';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+color: #FFFFFF;
+text-align: center;
+} */
