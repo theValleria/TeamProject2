@@ -1,0 +1,49 @@
+.check-inp{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 36px;
+}
+
+.ik >input {
+    width: 100%;
+    height: 100%;
+
+    padding: 10px;
+
+    border: none;
+    outline: none;
+
+    background: rgba(215, 215, 215, 1);
+}
+
+.ik{
+    width: 150px;
+    height: 35px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.iconn {
+    position: absolute;
+    font-size: 15px;
+    background-color: black;
+    color: azure;
+    height: 100%;
+    width: 35px;
+    text-align: center;
+    vertical-align: middle;
+    right: 0;
+}
+
+.iconn::before {
+    display: flex;
+    height: 100%;
+    width: 35px;
+    justify-content: center;
+    align-items: center;
+}
