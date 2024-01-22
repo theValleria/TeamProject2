@@ -1,5 +1,5 @@
 section {
-   max-width: 1440px;
+   max-width: auto;
    height: 3202px;
    display: flex;
    flex-direction: column;
@@ -20,16 +20,16 @@ section {
    align-items: center;
 }
 
-.container p {
+/* .container p {
    font-family: "Montserrat Alternates";
    font-style: normal;
    font-weight: 400;
    font-size: 16px;
    line-height: 20px;
-   /* identical to box height */
+   identical to box height
 
    color: #000000;
-}
+} */
 
 hr {
    width: 536px;

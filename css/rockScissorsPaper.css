@@ -3,6 +3,7 @@
     justify-content: center;
     flex-direction: row;
     align-items: center;
+    position: relative;
 }
 
 .r-s-p-main{
@@ -24,7 +25,7 @@
 }
 
 .r-s-p-main p{
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates";
     font-weight: 400px;
     font-size: 12px;
     line-height: 14.63px;
@@ -49,7 +50,7 @@
     background-color: rgba(0, 0, 0, 1);
 
     color: white;
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates";
     font-weight: 400px;
     font-size: 12px;
     line-height: 14.63px;
@@ -61,7 +62,14 @@
     align-items: flex-start;
 
     position: absolute;
-    right: 20%;
+    right: -100%;
+}
+
+.r-s-p-score-table p {
+    font-family: "Montserrat Alternates";
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 20.4px;
 }
 
 .r-s-p-score{

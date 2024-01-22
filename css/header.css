@@ -1,10 +1,10 @@
 header {
-   width: 1440px;
+   width: auto;
    height: 80px;
    background: #ffffff;
    display: flex;
    align-items: center;
-   padding-left: 175px;
+   padding-left: 0;
    /* border: 1px solid black; */
 }
 
@@ -100,4 +100,12 @@ input:checked + .slider:before {
 
 .slider.round:before {
    border-radius: 50%;
+}
+
+header .logo {
+   margin-left: auto;
+}
+
+header .theme {
+   margin-right: auto;
 }

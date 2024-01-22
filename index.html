@@ -5,6 +5,11 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Document</title>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
       <link rel="stylesheet" href="./css/reset.css" />
       <link rel="stylesheet" href="./css/style.css" />
 
@@ -55,9 +60,6 @@
                <div class="ik">
                   <input type="text" id="inpNumber" placeholder="Введіть число">
                   <i class="fa fa-search iconn" aria-hidden="true" onclick="checkNumb()"></i>
-                  <!-- <i class="checkicon" aria-hidden="true" onclick="checkNumb()">
-                     <img src="./img/guessNumber/lupa.png" alt="LUPA" class="iconn">
-                  </i> -->
             
                </div>
             
@@ -96,6 +98,41 @@
 
             <div class="seperator"></div>
             <!-- ----------------------------4---------------------------------- -->
+            <h1 class="gameTitle">Калькулятор</h1>
+            
+            <div class="calculate">
+               <input type="text" class="firstNum" placeholder="Введіть число">
+            
+               <div class="actions">
+                  <button onclick="addNumbers()" class="buttonAction"><img src="./img/icon/calculate/add.svg" alt=""></button>
+                  <button onclick="mulNumbers()" class="buttonAction"><img src="./img/icon/calculate/mul.svg" alt=""></button>
+                  <button onclick="subNumbers()" class="buttonAction"><img src="./img/icon/calculate/sub.svg" alt=""></button>
+                  <button onclick="divideNumbers()" class="buttonAction"><img src="./img/icon/calculate/divide.svg" alt=""></button>
+               </div>
+            
+               <input type="text" class="secondNum" placeholder="Введіть число">
+            
+               <img src="./img/icon/calculate/equal.svg" class="equal" alt="">
+            
+               <p class="calculateResult">Результат</p>
+            </div>
+            <div class="seperator"></div>
+            
+            <!-- ----------------------------5---------------------------------- -->
+            <!-- <div class="seperator"></div> -->
+            <!-- ----------------------------6---------------------------------- -->
+            <h1 class="gameTitle">Google динозавр</h1>
+
+            <div class="rex-runner">
+
+               <div class="dino"></div>
+               <img src="./img/dino/cactus_1.png" alt="cactus" class="cactus">
+               <img src="./img/dino/ground.png" alt="ground" class="ground">
+
+               <p class="rex-runner-game-over">GAME OVER</p>
+
+            </div>
+
 
          </main>
       </section>
@@ -161,5 +198,7 @@
       <script src="./js/RockScissorsPaper.js"></script>
       <script src="./js/yearOfBirth.js"></script>
       <script src="./js/guessNumber.js"></script>
+      <script src="./js/calculator.js"></script>
+      <script src="./js/rexRunner.js"></script>
    </body>
 </html>

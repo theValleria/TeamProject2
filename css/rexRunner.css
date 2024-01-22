@@ -1,0 +1,95 @@
+.rex-runner {
+    position: relative;
+    width: 630px;
+    height: 500px;
+
+    margin: 36px;
+    padding-top: 180px;
+    overflow: hidden;
+}
+
+.dino {
+    position: absolute;
+
+    top: 125px;
+    left: 50px;
+
+    height: 74px;
+    width: 68px;
+
+    background-image: url('/img/dino/standing_still.png');
+    background-size: cover;
+
+    /* transition: transform 0.5s ease-in-out; */
+}
+
+@keyframes runAnimation {
+    to {
+        background-position: -900px;
+    }
+}
+
+.dinoMoveAnimation{
+    animation: moveDinoAnimation 0.5s linear infinite;
+}
+
+@keyframes moveDinoAnimation {
+    0%, 100%{
+        background-image: url('/img/dino/dino_run1.png');
+        background-size: cover;
+    }
+
+    50% {
+        background-image: url('/img/dino/dino_run2.png');
+        background-size: cover;
+    }
+}
+
+
+.cactus {
+    position: absolute;
+    top: 160px;
+    right: 0;
+    height: 80px;
+
+    transform: translate(-50%, -50%);
+}
+.moveAnimation {
+    animation: moveCactusAnimation 3s linear infinite;
+}
+
+@keyframes moveCactusAnimation {
+    0% {
+        right: 0;
+        transform: translate(-50%, -50%);
+    }
+
+    25% {
+        transform: translate(-50%, -50%);
+    }
+
+    50% {
+        transform: translate(50%, -50%);
+    }
+
+    75% {
+        transform: translate(50%, -50%);
+    }
+
+    100% {
+        right: 100%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.rex-runner-game-over {
+    position: absolute;
+    display: none;
+
+    top: 140px;
+    left: 274px;
+
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
