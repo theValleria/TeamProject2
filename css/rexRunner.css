@@ -1,10 +1,10 @@
 .rex-runner {
     position: relative;
     width: 630px;
-    height: 500px;
+    height: 210px;
 
-    margin: 36px;
     padding-top: 180px;
+    margin-bottom: 36px;
     overflow: hidden;
 }
 
@@ -19,8 +19,6 @@
 
     background-image: url('../img/dino/standing_still.png');
     background-size: cover;
-
-    /* transition: transform 0.5s ease-in-out; */
 }
 
 @keyframes runAnimation {

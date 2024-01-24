@@ -1,0 +1,67 @@
+.fNum,
+.sNum,
+.tNum {
+    width: 135px;
+    height: 35px;
+
+    padding: 10px;
+    background-color: #d7d7d7;
+
+    border: none;
+    outline: none;
+
+    border-radius: 20px;
+
+    box-shadow: 3px 4px 0 0 rgb(194, 194, 194);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    margin-right: 19px;
+    margin-left: 19px;
+}
+
+.threeNumbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 50px;
+}
+
+.eightResult {
+    width: 252px;
+    height: 15px;
+
+    font-family: "Montserrat Alternates";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.butt8 {
+    width: 160px;
+    height: 35px;
+    padding: 10px, 20px, 10px, 20px;
+    border-radius: 20px;
+    gap: 10px;
+    margin-top: 30px;
+
+    background: #000;
+
+    color: rgba(255, 255, 255, 1);
+
+    font-family: Montserrat Alternates;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+
+}

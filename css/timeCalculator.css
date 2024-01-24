@@ -1,0 +1,73 @@
+#inpMinute {
+    width: 150px;
+    height: 35px;
+    /* top: 1097px; */
+    /* left: 487px; */
+    padding: 20px, 45px, 20px, 20px;
+    border-radius: 20px;
+    /* gap: 10px; */
+    /* margin-top: 25px; */
+
+    background: rgba(215, 215, 215, 1);
+}
+
+.punktir {
+    width: 100px;
+    size:2;
+    border:none;
+    border-top: 1px dashed rgba(0, 0, 0, 1);
+    color:black;
+
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 33px;
+}
+
+.cho{
+    display: flex;
+    align-items: center;
+}
+
+.chorn {
+    position: relative;
+    width: 150px;
+    height: 35px;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+
+    margin-bottom: 36px;
+    margin-top: 36px;
+    margin-right: 33px;
+}
+
+.chorn>input {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #d7d7d7;
+
+    border: none;
+    outline: none;
+    
+}
+
+#resultt {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+
+    margin-top: auto;
+    margin-bottom: auto;
+
+
+
+    color: rgba(0, 0, 0, 1);
+}

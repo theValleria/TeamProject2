@@ -29,7 +29,6 @@
 }
 
 .iconn {
-    position: absolute;
     font-size: 15px;
     background-color: black;
     color: azure;
@@ -46,4 +45,4 @@
     width: 35px;
     justify-content: center;
     align-items: center;
-}
+} 

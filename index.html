@@ -59,7 +59,7 @@
             <div class="check-inp">
                <div class="ik">
                   <input type="text" id="inpNumber" placeholder="Введіть число">
-                  <i class="fa fa-search iconn" aria-hidden="true" onclick="checkNumb()"></i>
+                  <i class="fa fa-search icon" aria-hidden="true" onclick="checkNumb()"></i>
             
                </div>
             
@@ -119,7 +119,22 @@
             <div class="seperator"></div>
             
             <!-- ----------------------------5---------------------------------- -->
-            <!-- <div class="seperator"></div> -->
+            <h1 class="gameTitle">Калькулятор часу</h1>
+            
+            <div class="cho">
+               <div class="chorn">
+                  <input type="text" id="inpMinute" placeholder="Введіть число">
+                  <i class="fa fa-search icon" aria-hidden="true"></i>
+               </div>
+               
+               <hr class="punktir">
+               
+               
+               <p id="resultt"> год хв</p>
+            </div>
+
+            <div class="seperator"></div>
+
             <!-- ----------------------------6---------------------------------- -->
             <h1 class="gameTitle">Google динозавр</h1>
 
@@ -133,6 +148,21 @@
 
             </div>
 
+            <div class="seperator"></div>
+
+            <!-- ----------------------------7---------------------------------- -->
+            <!-- ----------------------------8---------------------------------- -->
+
+            <h1 class="gameTitle">Введіть 3 числа</h1>
+            <div class="threeNumbers">
+               <input type="text" class="fNum" placeholder="Введіть число" />
+               <input type="text" class="sNum" placeholder="Введіть число" />
+               <input type="text" class="tNum" placeholder="Введіть число" />
+            </div>
+            <button onclick="getMaxNumber()" class="butt8">Показати найбільше</button>
+            <p class="eightResult">Найбільше число, яке ви ввели - </p>
+
+            <div class="seperator"></div>
 
          </main>
       </section>
@@ -200,5 +230,8 @@
       <script src="./js/guessNumber.js"></script>
       <script src="./js/calculator.js"></script>
       <script src="./js/rexRunner.js"></script>
+      <script src="./js/timeCalculator.js"></script>
+      <script src="./js/biggestNumber.js"></script>
+      <script src="./js/football.js"></script>
    </body>
 </html>
