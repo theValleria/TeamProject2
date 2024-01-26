@@ -1,7 +1,25 @@
-function checkTime(){
-    let minutes = document.getElementById("inpMinute").value;
-    let hours = Math.floor(minutes / 60);
-    let remainMinutes = minutes % 60;
-    document.getElementById("resultt").innerText = hours + " : " + remainMinutes;
-    console.log(remainMinutes);
-}
+let input = document.querySelector('#inpMinute');
+
+
+input.addEventListener('click', function() {
+    
+    let minutes = prompt("Введіть кількість хвилин:");
+
+   
+    if (minutes !== null && minutes !== "") {
+        minutes = parseInt(minutes);
+
+        
+        let hours = Math.floor(minutes / 60);
+        let remainingMinutes = minutes % 60;
+
+        
+        let formatMinute = (remainingMinutes < 10 ? "0" : "") + remainingMinutes;
+
+        
+        let resultString = "Результат: " + hours + ":" + formatMinute;
+
+        
+        alert(resultString);
+    }
+});

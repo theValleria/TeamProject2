@@ -1,0 +1,22 @@
+.scientists-container{
+    width: 695px;
+    height: 372px;
+
+    padding-left: 59px;
+
+    margin-top: 36px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.scientist{
+    width: 100px;
+    height: 100px;
+
+    margin-right: 59px;
+
+    border: none;
+    border-radius: 20%;
+    background-color: #D9D9D9;
+}
