@@ -5,7 +5,7 @@ const getMaxNumber = () => {
 
     if(!isNaN(number1) && !isNaN(number2) && !isNaN(number3)) {
         const maxNumber = Math.max(number1, number2, number3);
-        document.querySelector(".eightResult").innerText = maxNumber;
+        document.querySelector(".eightResult").innerText += maxNumber;
     } else{
         document.querySelector(".eightResult").innerText = "Введіть коректне число";
     }

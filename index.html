@@ -124,13 +124,13 @@
             <div id="cho">
                <div class="chorn">
                   <input type="text" id="inpMinute" placeholder="Введіть число">
-                  <i class="fa fa-search icon" aria-hidden="true"></i>
+                  <i class="fa fa-search icon time-search" aria-hidden="true"></i>
                </div>
                
                <hr class="punktir">
                
                
-               <p id="resultt"> год хв</p>
+               <p class ="resultt"> год хв</p>
             </div>
 
             <div class="seperator"></div>
@@ -173,35 +173,22 @@
             <!-- <div class="seperator"></div> -->
             <!-- ----------------------------10---------------------------------- -->
 
-            <!-- <h1 class="gameTitle">Обери вченого/их</h1> -->
+            <h1 class="gameTitle">Обери вченого/их</h1>
 
-            <!-- <div class="scientists-container">
-               <div class="scientist"></div>
-               <div class="scientist"></div>
-               <div class="scientist"></div>
-               <div class="scientist"></div>
-               <div class="scientist"></div>
-               <div class="scientist"></div>
-               <div class="scientist"></div>
-               <div class="scientist"></div>
-               <div class="scientist"></div>
-               <div class="scientist"></div>
-               <div class="scientist"></div>
-               <div class="scientist"></div>
-            </div>
+            <div class="scientists-container"></div>
 
             <div class="filters">
-               <button class="filter">Які вчені народилися в 19 ст</button>
-               <button class="filter">Відсортувати вчених за алфавітом</button>
-               <button class="filter">Відсортувати вчених за кількістю прожитих років</button>
-               <button class="filter">Знайти вченого, який народився найпізніше</button>
-               <button class="filter">Знайти рік народження Albert Einshtein</button>
-               <button class="filter">Знайти вчених, прізвища яких починаються на на літеру “С”</button>
-               <button class="filter">Видалити всіх вчених, ім’я яких починається на “А”</button>
-               <button class="filter">Знайти вченого, який прожив найдовше і вченого,
+               <button class="filter" data-action="filter1">Які вчені народилися в 19 ст</button>
+               <button class="filter" data-action="filter2">Відсортувати вчених за алфавітом</button>
+               <button class="filter" data-action="filter3">Відсортувати вчених за кількістю прожитих років</button>
+               <button class="filter" data-action="filter4">Знайти вченого, який народився найпізніше</button>
+               <button class="filter" data-action="filter5">Знайти рік народження Albert Einshtein</button>
+               <button class="filter" data-action="filter6">Знайти вчених, прізвища яких починаються на на літеру “С”</button>
+               <button class="filter" data-action="filter7">Видалити всіх вчених, ім’я яких починається на “А”</button>
+               <button class="filter" data-action="filter8">Знайти вченого, який прожив найдовше і вченого,
                який прожив найменше</button>
-               <button class="filter">Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
-            </div> -->
+               <button class="filter" data-action="filter9">Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
+            </div>
 
 
          </main>
@@ -273,5 +260,6 @@
       <script src="./js/timeCalculator.js"></script>
       <script src="./js/biggestNumber.js"></script>
       <script src="./js/football.js"></script>
+      <script src="./js/chooseScientists.js"></script>
    </body>
 </html>

@@ -22,14 +22,24 @@ function computerChoise() {
 
 rock.addEventListener("click", () => {
     userChoose = "rock";
+    rock.style.filter = "opacity(0.6)";
+    scissors.style.filter = "opacity(1)";
+    paper.style.filter = "opacity(1)";
 });
 
 scissors.addEventListener("click", () => {
     userChoose = "scissors";
+    scissors.style.filter = "opacity(0.6)";
+    rock.style.filter = "opacity(1)";
+    paper.style.filter = "opacity(1)";
 });
 
 paper.addEventListener("click", () => {
     userChoose = "paper";
+    paper.style.filter = "opacity(0.6)";
+    rock.style.filter = "opacity(1)";
+    scissors.style.filter = "opacity(1)";
+
 });
 
 

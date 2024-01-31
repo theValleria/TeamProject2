@@ -5,6 +5,7 @@
     padding-left: 59px;
 
     margin-top: 36px;
+    margin-bottom: 36px;
 
     display: flex;
     flex-wrap: wrap;
@@ -19,4 +20,55 @@
     border: none;
     border-radius: 20%;
     background-color: #D9D9D9;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: black;
+    font-family: "Montserrat Alternates";
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.filters{
+    width: 945px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.filter:nth-child(odd){
+    margin-right: 36px;
+    text-align: left;
+}
+
+.filter:nth-child(even) {
+    text-align: right;
+}
+
+.filter{
+    height: 35px;
+    width: max-content;
+
+    padding: 10px 20px;
+    margin-bottom: 20px;
+
+    color: white;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+
+    background-color: black;
+    text-align: center;
+
+    border: none;
+    border-radius: 20px;
+
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
 }

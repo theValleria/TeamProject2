@@ -1,25 +1,19 @@
-let input = document.querySelector('#inpMinute');
+let timeSearch = document.querySelector('.time-search');
 
 
-input.addEventListener('click', function() {
+timeSearch.addEventListener('click', function() {
     
-    let minutes = prompt("Введіть кількість хвилин:");
-
+    let timeResult = document.querySelector(".resultt");
+    let minutes = Number(document.querySelector("#inpMinute").value);
    
     if (minutes !== null && minutes !== "") {
         minutes = parseInt(minutes);
 
-        
         let hours = Math.floor(minutes / 60);
         let remainingMinutes = minutes % 60;
 
-        
         let formatMinute = (remainingMinutes < 10 ? "0" : "") + remainingMinutes;
 
-        
-        let resultString = "Результат: " + hours + ":" + formatMinute;
-
-        
-        alert(resultString);
+        timeResult.textContent = hours + ":" + formatMinute;
     }
 });
