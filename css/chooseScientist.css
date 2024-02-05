@@ -31,6 +31,8 @@
     font-family: "Montserrat Alternates";
     font-size: 13px;
     font-weight: 400;
+
+    box-shadow: 7px 5px 5px -3px rgba(0, 0, 0, 0.5);
 }
 
 .filters{

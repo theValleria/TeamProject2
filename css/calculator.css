@@ -10,7 +10,8 @@
 
     border-radius: 20px;
 
-    box-shadow: 3px 4px 0 0 rgb(194, 194, 194);
+
+    box-shadow: 3px 4px 0 0 rgba(0, 0, 0, 0.25);
 
     display: flex;
     align-items: center;
@@ -29,7 +30,7 @@
 
     border-radius: 20px;
 
-    box-shadow: 3px 4px 0 0 rgb(194, 194, 194);
+    box-shadow: 3px 4px 0 0 rgba(0, 0, 0, 0.25);
 
 
     display: flex;
@@ -79,7 +80,7 @@
     line-height: 15px;
     letter-spacing: 0em;
     text-align: left;
-    /* color: rgba(126, 126, 126, 1); */
+    color: black;
 
     display: flex;
     align-items: center;

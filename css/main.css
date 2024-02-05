@@ -348,7 +348,7 @@ main .card {
    left: 558px;
 }
 
-.itc-slider__indicators {
+/* .itc-slider__indicators {
    display: flex;
    justify-content: space-between;
    width: 174px;
@@ -367,7 +367,7 @@ main .card {
    background: #797979;
 }
 
-/* .itc-slider__indicators {
+.itc-slider__indicators {
    position: absolute;
    right: 0;
    bottom: 0;
