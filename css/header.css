@@ -68,7 +68,7 @@ nav ul {
 
 .slider:before {
    position: absolute;
-   content: url(/img/white.svg);
+   content: url(../img/white.svg);
    width: 20.5px;
    height: 20px;
    /* left: 4px;
@@ -87,7 +87,7 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-   content: url(/img/dark.svg);
+   content: url(../img/dark.svg);
    -webkit-transform: translateX(20px);
    -ms-transform: translateX(20px);
    transform: translateX(20px);
