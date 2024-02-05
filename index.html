@@ -13,6 +13,8 @@
       <link rel="stylesheet" href="./css/reset.css" />
       <link rel="stylesheet" href="./css/style.css" />
 
+      <link rel="stylesheet" href="./model.html">
+
    </head>
    <body>
       <header class="white" id="themeMode">
@@ -30,7 +32,7 @@
                <input type="checkbox" id="btnSwitch"/>
                <span class="slider round"></span>
             </label>
-            <p>Вітаємо, <span>User</span></p>
+            <p>Вітаємо, <span id="span">User</span></p>
          </div>
       </header>
 
@@ -227,6 +229,8 @@
          </main>
       </section>
 
+      
+
       <footer class="footer">
          <div class="footer-logo"></div>
          <p class="footer-info">
@@ -250,7 +254,7 @@
          </div>
       </footer>
 
-      <div class="modal-start">
+      <div id="modal-start" class="modal-start">
          <div class="modal-window">
             <p class="modal-title">
                Привіт! <br />
@@ -259,25 +263,30 @@
                <br />
                Бажаємо Вам гарно провести час!
             </p>
-
+      
             <p class="modal-name">Введіть своє ім’я:</p>
-
+      
             <form class="">
-               <input type="text" name="nameUser" placeholder="Ваше ім’я..." />
-
-               <button type="submit">Зберегти</button>
+               <input id="name" type="text" name="nameUser" placeholder="Ваше ім’я..." />
+      
+               <button id="closeSave">X</button>
+      
+               <button id="submit" type="button" href="#">Зберегти</button>
             </form>
+      
          </div>
-
+      
          <i class="icon-close"></i>
          <i class="icon-bar"></i>
          <i class="icon-gameBar"></i>
          <i class="icon-puzzle"></i>
          <i class="icon-sword"></i>
       </div>
-
-      <div class="modal-subscribe">
-         <p class="title">Дякую за підписку!</p>
+      
+      
+      <div id="subscribe" class="modal-subscribe">
+         <p class="title" id="subscribethaks">Дякую за підписку!</p>
+         <button id="close">X</button>
          <i class="icon-close"></i>
          <i class="icon-bar"></i>
          <i class="icon-gameBar"></i>
@@ -296,5 +305,6 @@
       <script src="./js/chooseScientists.js"></script>
       <script src="./js/slider.js"></script>
       <script src="./js/darkTheme.js"></script>
+      <script src="./js/modal.js"></script>
    </body>
 </html>

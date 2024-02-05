@@ -13,6 +13,8 @@ function darktheme() {
 
     footer.classList.remove("white");
     footer.classList.add("dark");
+
+    localStorage.setItem("theme", "dark");
 }
 
 function lighttheme() {
@@ -24,12 +26,27 @@ function lighttheme() {
 
     footer.classList.remove("dark");
     footer.classList.add("white");
+
+    localStorage.setItem("theme", "light");
 }
+
+window.addEventListener("DOMContentLoaded", function() {
+    var savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+        darktheme();
+        checkbox.checked = true;
+    } else {
+        lighttheme();
+        checkbox.checked = false;
+    }
+});
 
 checkbox.addEventListener("change", function() {
     if (this.checked) {
+        localStorage.setItem("theme", true);
         darktheme();
     } else {
+        localStorage.setItem("theme", false);
         lighttheme();
     }
 });
