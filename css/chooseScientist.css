@@ -42,27 +42,45 @@
     height: 270px;
 
     display: flex;
-    flex-wrap: wrap;
+
+    flex-direction: column;
 
     justify-content: center;
     align-items: center;
 
     margin-bottom: 36px;
-
-    position: relative;
 }
 
-.filter:nth-child(odd){
+.parts{
+    width: 945px;
+    height: 270px;
+    
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.partLeft{
+    text-align: right;
+    margin-right: 36px;
+}
+.partRight{
+    text-align: left;
+}
+
+/* .filter:nth-child(odd){
     margin-right: 36px;
     text-align: left;
 }
 
 .filter:nth-child(even) {
     text-align: right;
-}
+} */
 
 .filter{
-    height: 35px;
+    /* height: 35px; */
+    height: max-content;
     width: max-content;
 
     padding: 10px 20px;

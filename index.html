@@ -19,24 +19,17 @@
    <body>
       <header class="white" id="themeMode">
          <div class="logo"></div>
-         <!-- <nav>
-            <ul>
-               <li>Інтерактив</li>
-               <li>Наша команда</li>
-               <li>Контакти</li>
-            </ul>
-         </nav> -->
 
          <nav>
             <ul>
-               <div class="dropdown">
+               <li><div class="dropdown">
                   <button onclick="dropdownFunction()" class="dropbtn">Інтерактив ↓</button>
                   <div id="myDropdown" class="dropdown-content">
                      <a href="#" id="number" onclick="showNumerical()">Числовий</a>
                      <a href="#" id="game" onclick="showPlaying()">Ігровий</a>
                      <a href="#" id="acquaintance" onclick="showAcquaintance()">Ознайомчий</a>
                   </div>
-               </div>
+               </div></li>
                <li>Наша команда</li>
                <li>Контакти</li>
             </ul>
@@ -247,19 +240,26 @@
                <div class="scientists-container"></div>
                
                <div class="filters">
-                  <button class="filter" data-action="filter1">Які вчені народилися в 19 ст</button>
-                  <button class="filter" data-action="filter2">Відсортувати вчених за алфавітом</button>
-                  <button class="filter" data-action="filter3">Відсортувати вчених за кількістю прожитих років</button>
-                  <button class="filter" data-action="filter4">Знайти вченого, який народився найпізніше</button>
-                  <button class="filter" data-action="filter5">Знайти рік народження Albert Einshtein</button>
-                  <button class="filter" data-action="filter6">Знайти вчених, прізвища яких починаються на на літеру “С”</button>
-                  <button class="filter" data-action="filter7">Видалити всіх вчених, ім’я яких починається на “А”</button>
-                  <button class="filter" data-action="filter8">Знайти вченого, який прожив найдовше і вченого,
-                     який прожив найменше</button>
+                  <div class="parts">
+                     <div class="partLeft">
+                        <button class="filter" data-action="filter1">Які вчені народилися в 19 ст</button>
+                        <button class="filter" data-action="filter3">Відсортувати вчених за кількістю прожитих років</button>
+                        <button class="filter" data-action="filter5">Знайти рік народження Albert Einshtein</button>
+                        <button class="filter" data-action="filter7">Видалити всіх вчених, ім’я яких починається на “А”</button>
+                     </div>
+                     
+                     <div class="partRight">
+                        <button class="filter" data-action="filter2">Відсортувати вчених за алфавітом</button>
+                        <button class="filter" data-action="filter4">Знайти вченого, який народився найпізніше</button>
+                        <button class="filter" data-action="filter6">Знайти вчених, прізвища яких починаються на на літеру “С”</button>
+                        <button class="filter" data-action="filter8">Знайти вченого, який прожив найдовше і вченого, <br>
+                           який прожив найменше</button>
+                     </div>
+                  </div>
+
                   <button class="filter" data-action="filter9">Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
                </div>
             </div>
-
 
          </main>
       </section>
@@ -278,9 +278,10 @@
 
          <div class="form-subscribe">
             <form class="form">
-               <input type="text" placeholder="Ваша ел. адреса..." />
+               <input class="userEmail" type="text" placeholder="Ваша ел. адреса..." />
 
-               <button type="submit" >Підписатись</button>
+               <button type="submit" id="subs" onclick="checkEmail()" >Підписатись</button>
+
             </form>
             <p class="form-info">
                *Підписавшись, Ви зможете ортимувати інформаццію про новинки на

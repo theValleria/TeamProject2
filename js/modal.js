@@ -7,7 +7,6 @@ let nameSoxranit = document.getElementById("submit");
 nameSoxranit.onclick = function () {
   newNameUser.innerText = submitlol.value;
   closeModal();
-  openModal2();
 }
 
 //закрытие модального окна по кнопке
@@ -16,9 +15,9 @@ let modal = document.getElementById('modal-start');
 
 let btnClose = document.getElementById('closeSave');
 
-function openModal() {
-  modal.style.display = 'block';
-}
+// function openModal() {
+//   modal.style.display = 'block';
+// }
 
 function closeModal() {
   modal.style.display = 'none';
@@ -45,5 +44,16 @@ Btn.onclick = function(){
 let modalBtn2 = document.getElementById("subs");
 
 function openModal2(){
-    modal2.style.display = "block";
+  modal2.style.display = "block";
+}
+
+modalBtn2.onclick = function (event) {
+  event.preventDefault();
+
+  let userEmail = document.querySelector(".userEmail").value;
+
+  if (userEmail.includes('@') && userEmail.includes('.')) {
+    openModal2();
+  } else {
+  }
 }
