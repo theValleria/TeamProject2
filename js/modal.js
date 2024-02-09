@@ -3,8 +3,11 @@
 let newNameUser = document.getElementById("span");
 let submitlol = document.getElementById("name");
 let nameSoxranit = document.getElementById("submit");
+
 nameSoxranit.onclick = function () {
-  newNameUser.innerText= submitlol.value;
+  newNameUser.innerText = submitlol.value;
+  closeModal();
+  openModal2();
 }
 
 //закрытие модального окна по кнопке
@@ -28,20 +31,19 @@ btnClose.onclick = function() {
 
 
 //код на закрытие 2 модального окна 
-let modal1 =  document.getElementById("subscribe"); 
+let modal2 =  document.getElementById("subscribe"); 
 
 let Btn = document.getElementById("close"); 
 
 Btn.onclick = function(){
      Btn.style.display="block";
-     modal1.style.display="none";
+     modal2.style.display="none";
 }
 
-//код на закрытие 2 модального окна
-let modal2 = document.getElementById("subscribe");
+// код на открытие 2 модального окна
 
 let modalBtn2 = document.getElementById("subs");
 
-modalBtn2.onclick = function(){
+function openModal2(){
     modal2.style.display = "block";
 }

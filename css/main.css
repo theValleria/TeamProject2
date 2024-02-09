@@ -1,6 +1,7 @@
 section {
    max-width: auto;
-   height: 3202px;
+   /* height: 3202px; */
+   height: 3295px;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -12,7 +13,8 @@ section {
 
 .container {
    width: 1090px;
-   height: 3202px;
+   /* height: 3202px; */
+   height: max-content;
    border: 2px solid black;
    background: #ffffff;
    display: flex;

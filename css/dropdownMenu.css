@@ -1,0 +1,103 @@
+.dropbtn {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    width: 160px;
+
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 1);
+    min-width: 160px;
+
+    width: 160px;
+    text-align: center;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+
+    border: 2px solid black;
+    border-top: none;
+
+    position: absolute;
+    top: 50px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 20px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+li {
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    width: 160px;
+}
+
+#number,
+#game,
+#acquaintance {
+    font-family: "Montserrat Alternates";
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.dropdown-content {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+}
+
+.numerical,
+.playing,
+.acquaintance{
+    width: max-content;
+    height: max-content;
+    
+    margin: 0;
+    padding: 0;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

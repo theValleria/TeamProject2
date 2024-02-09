@@ -19,9 +19,24 @@
    <body>
       <header class="white" id="themeMode">
          <div class="logo"></div>
-         <nav>
+         <!-- <nav>
             <ul>
                <li>Інтерактив</li>
+               <li>Наша команда</li>
+               <li>Контакти</li>
+            </ul>
+         </nav> -->
+
+         <nav>
+            <ul>
+               <div class="dropdown">
+                  <button onclick="dropdownFunction()" class="dropbtn">Інтерактив ↓</button>
+                  <div id="myDropdown" class="dropdown-content">
+                     <a href="#" id="number" onclick="showNumerical()">Числовий</a>
+                     <a href="#" id="game" onclick="showPlaying()">Ігровий</a>
+                     <a href="#" id="acquaintance" onclick="showAcquaintance()">Ознайомчий</a>
+                  </div>
+               </div>
                <li>Наша команда</li>
                <li>Контакти</li>
             </ul>
@@ -43,135 +58,152 @@
 
             <div class="seperator"></div>
             <!-- ----------------------------1---------------------------------- -->
-            <h1 class="gameTitle">Перевір в який рік ти народився</h1>
-            
-            <div class="res">
-               <div class="input-search">
-                  <input type="text" id="birthYearInput" placeholder="Введіть рік народження">
-                  <i class="fa fa-search icon" aria-hidden="true" onclick="checkLeapYear()"></i>
+            <div class="numerical">
+               <h1 class="gameTitle">Перевір в який рік ти народився</h1>
+               
+               <div class="res">
+                  <div class="input-search">
+                     <input type="text" id="birthYearInput" placeholder="Введіть рік народження">
+                     <i class="fa fa-search icon" aria-hidden="true" onclick="checkLeapYear()"></i>
+                  </div>
+               
+                  <p id="result">Ви народились у...</p>
                </div>
-            
-               <p id="result">Ви народились у...</p>
+               
+               <div class="seperator"></div>
             </div>
-
-            <div class="seperator"></div>
             <!-- ----------------------------2---------------------------------- -->
-            <h1 class="gameTitle"> Вгадай число, яке загадав комп’ютер </h1>
-            
-            <div class="check-inp">
-               <div class="ik">
-                  <input type="text" id="inpNumber" placeholder="Введіть число">
-                  <i class="fa fa-search icon" aria-hidden="true" onclick="checkNumb()"></i>
-            
+            <div class="numerical">
+               <h1 class="gameTitle"> Вгадай число, яке загадав комп’ютер </h1>
+               
+               <div class="check-inp">
+                  <div class="ik">
+                     <input type="text" id="inpNumber" placeholder="Введіть число">
+                     <i class="fa fa-search icon" aria-hidden="true" onclick="checkNumb()"></i>
+               
+                  </div>
+               
                </div>
-            
+               
+               <div class="seperator"></div>
             </div>
-
-            <div class="seperator"></div>
             <!-- ----------------------------3---------------------------------- -->
-            <h1 class="gameTitle">Камінь - ножиці - папір</h1>
-
-            <div class="rock-scissors-paper">
+            <div class="playing">
+               <h1 class="gameTitle">Камінь - ножиці - папір</h1>
                
-               <div class="r-s-p-main">
-                  <div class="buttons">
-                     <img src="./img/rock-scissors-paper/rock.png" class="rock" alt="rock">
-                     <img src="./img/rock-scissors-paper/scissors.png" class="scissors" alt="scissors">
-                     <img src="./img/rock-scissors-paper/paper.png" class="paper" alt="paper">
+               <div class="rock-scissors-paper">
+               
+                  <div class="r-s-p-main">
+                     <div class="buttons">
+                        <img src="./img/rock-scissors-paper/rock.png" class="rock" alt="rock">
+                        <img src="./img/rock-scissors-paper/scissors.png" class="scissors" alt="scissors">
+                        <img src="./img/rock-scissors-paper/paper.png" class="paper" alt="paper">
+                     </div>
+               
+                     <p class="r-s-p-result">Результат</p>
+                     <button class="r-s-p-result-btn">Варіант комп’ютера</button>
                   </div>
                
-                  <p class="r-s-p-result">Результат</p>
-                  <button class="r-s-p-result-btn">Варіант комп’ютера</button>
+                  <div class="r-s-p-score-table">
+                     <p>Рахунок:</p>
+                     <div class="r-s-p-score">
+                        <p>Комп’ютер - </p>
+                        <p class="computer-score"> 0</p>
+                     </div>
+               
+                     <div class="r-s-p-score">
+                        <p>Ви - </p>
+                        <p class="user-score"> 0</p>
+                     </div>
+                  </div>
                </div>
                
-               <div class="r-s-p-score-table">
-                  <p>Рахунок:</p>
-                  <div class="r-s-p-score">
-                     <p>Комп’ютер - </p>
-                     <p class="computer-score"> 0</p>
-                  </div>
-
-                  <div class="r-s-p-score">
-                     <p>Ви - </p>
-                     <p class="user-score"> 0</p>
-                  </div>
-               </div>
+               <div class="seperator"></div>
             </div>
-
-            <div class="seperator"></div>
             <!-- ----------------------------4---------------------------------- -->
-            <h1 class="gameTitle">Калькулятор</h1>
-            
-            <div class="calculate">
-               <input type="text" class="firstNum" placeholder="Введіть число">
-            
-               <div class="actions">
-                  <button onclick="addNumbers()" class="buttonAction"><img src="./img/icon/calculate/add.png" alt=""></button>
-                  <button onclick="mulNumbers()" class="buttonAction"><img src="./img/icon/calculate/multiply.png" alt=""></button>
-                  <button onclick="subNumbers()" class="buttonAction"><img src="./img/icon/calculate/subtract.png" alt=""></button>
-                  <button onclick="divideNumbers()" class="buttonAction"><img src="./img/icon/calculate/divide.png" alt=""></button>
+            <div class="numerical">
+               <h1 class="gameTitle">Калькулятор</h1>
+               
+               <div class="calculate">
+                  <input type="text" class="firstNum" placeholder="Введіть число">
+               
+                  <div class="actions">
+                     <button onclick="addNumbers()" class="buttonAction"><img src="./img/icon/calculate/add.png" alt=""></button>
+                     <button onclick="mulNumbers()" class="buttonAction"><img src="./img/icon/calculate/multiply.png" alt=""></button>
+                     <button onclick="subNumbers()" class="buttonAction"><img src="./img/icon/calculate/subtract.png" alt=""></button>
+                     <button onclick="divideNumbers()" class="buttonAction"><img src="./img/icon/calculate/divide.png" alt=""></button>
+                  </div>
+               
+                  <input type="text" class="secondNum" placeholder="Введіть число">
+               
+                  <img src="./img/icon/calculate/equal.svg" class="equal" alt="">
+               
+                  <p class="calculateResult">Результат</p>
                </div>
-            
-               <input type="text" class="secondNum" placeholder="Введіть число">
-            
-               <img src="./img/icon/calculate/equal.svg" class="equal" alt="">
-            
-               <p class="calculateResult">Результат</p>
+               <div class="seperator"></div>
             </div>
-            <div class="seperator"></div>
             
             <!-- ----------------------------5---------------------------------- -->
-            <h1 class="gameTitle">Калькулятор часу</h1>
-            
-            <div id="cho">
-               <div class="chorn">
-                  <input type="text" id="inpMinute" placeholder="Введіть число">
-                  <i class="fa fa-search icon time-search" aria-hidden="true"></i>
+            <div class="numerical">
+               <h1 class="gameTitle">Калькулятор часу</h1>
+               
+               <div id="cho">
+                  <div class="chorn">
+                     <input type="text" id="inpMinute" placeholder="Введіть число">
+                     <i class="fa fa-search icon time-search" aria-hidden="true"></i>
+                  </div>
+               
+                  <hr class="punktir">
+               
+               
+                  <p class="resultt"> год хв</p>
                </div>
                
-               <hr class="punktir">
-               
-               
-               <p class ="resultt"> год хв</p>
+               <div class="seperator"></div>
             </div>
-
-            <div class="seperator"></div>
 
             <!-- ----------------------------6---------------------------------- -->
-            <h1 class="gameTitle">Google динозавр</h1>
-
-            <div class="rex-runner">
-
-               <div class="dino"></div>
-               <img src="./img/dino/cactus_1.png" alt="cactus" class="cactus">
-               <img src="./img/dino/ground.png" alt="ground" class="ground">
-
-               <p class="rex-runner-game-over">GAME OVER</p>
-
+            <div class="playing">
+               <h1 class="gameTitle">Google динозавр</h1>
+               
+               <div class="rex-runner">
+               
+                  <div class="dino"></div>
+                  <img src="./img/dino/cactus_1.png" alt="cactus" class="cactus">
+                  <img src="./img/dino/ground.png" alt="ground" class="ground">
+               
+                  <p class="rex-runner-game-over">GAME OVER</p>
+               
+               </div>
+               
+               <div class="seperator"></div>
             </div>
-
-            <div class="seperator"></div>
             <!-- ----------------------------7---------------------------------- -->
 
-            <h1 class="gameTitle">Футбол</h1>
-
-            <div class="pitch">
-               <img src="./img/ball.svg" class="ball" alt="ball">
+            <div class="playing">
+               <h1 class="gameTitle">Футбол</h1>
+               
+               <div class="pitch">
+                  <img src="./img/ball.svg" class="ball" alt="ball">
+               </div>
+               <div class="seperator"></div>
             </div>
-            <div class="seperator"></div>
             <!-- ----------------------------8---------------------------------- -->
 
-            <h1 class="gameTitle">Введіть 3 числа</h1>
-            <div class="threeNumbers">
-               <input type="text" class="fNum" placeholder="Введіть число" />
-               <input type="text" class="sNum" placeholder="Введіть число" />
-               <input type="text" class="tNum" placeholder="Введіть число" />
+            <div class="numerical">
+               <h1 class="gameTitle">Введіть 3 числа</h1>
+               <div class="threeNumbers">
+                  <input type="text" class="fNum" placeholder="Введіть число" />
+                  <input type="text" class="sNum" placeholder="Введіть число" />
+                  <input type="text" class="tNum" placeholder="Введіть число" />
+               </div>
+               <button onclick="getMaxNumber()" class="butt8">Показати найбільше</button>
+               <p class="eightResult">Найбільше число, яке ви ввели - </p>
+               
+               <div class="seperator"></div>
             </div>
-            <button onclick="getMaxNumber()" class="butt8">Показати найбільше</button>
-            <p class="eightResult">Найбільше число, яке ви ввели - </p>
-
-            <div class="seperator"></div>
             <!-- ----------------------------9---------------------------------- -->
+           <div class="acquaintance">
             <h1 class="gameTitle">Наша команда</h1>
             
             <div class="cont">
@@ -184,7 +216,7 @@
                         <img src="./img/developers/Mariya.jpg" alt="">
                         <p class="name1">Марія</p>
                         <p class="aboutWork1">Project Manager. Зробила програми "високосний рік", "калькулятор", "найбільше число"
-                           та слайдер для команди. </p>
+                           слайдер для команди та фільтр сторінки. </p>
                      </div>
             
                      <div class="student2">
@@ -198,31 +230,34 @@
                         <img src="./img/developers/Valeria.png" alt="">
                         <p class="name3">Валерія</p>
                         <p class="aboutWork3">TeamLead. Зробила ігри "камінь-ножиці-папір", "Google динозаврик", "футбол",
-                           "відсортуй вчених".</p>
+                           "відсортуй вчених" і також темну тему</p>
                      </div>
                   </div>
                </div>
                <button class="arrowRight"><img src="./img/arrowRight.svg" alt=""></button>
             </div>
-
+            
             <div class="seperator"></div>
+           </div>
             <!-- ----------------------------10---------------------------------- -->
 
-            <h1 class="gameTitle">Обери вченого/их</h1>
-
-            <div class="scientists-container"></div>
-
-            <div class="filters">
-               <button class="filter" data-action="filter1">Які вчені народилися в 19 ст</button>
-               <button class="filter" data-action="filter2">Відсортувати вчених за алфавітом</button>
-               <button class="filter" data-action="filter3">Відсортувати вчених за кількістю прожитих років</button>
-               <button class="filter" data-action="filter4">Знайти вченого, який народився найпізніше</button>
-               <button class="filter" data-action="filter5">Знайти рік народження Albert Einshtein</button>
-               <button class="filter" data-action="filter6">Знайти вчених, прізвища яких починаються на на літеру “С”</button>
-               <button class="filter" data-action="filter7">Видалити всіх вчених, ім’я яких починається на “А”</button>
-               <button class="filter" data-action="filter8">Знайти вченого, який прожив найдовше і вченого,
-               який прожив найменше</button>
-               <button class="filter" data-action="filter9">Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
+            <div class="acquaintance">
+               <h1 class="gameTitle">Обери вченого/их</h1>
+               
+               <div class="scientists-container"></div>
+               
+               <div class="filters">
+                  <button class="filter" data-action="filter1">Які вчені народилися в 19 ст</button>
+                  <button class="filter" data-action="filter2">Відсортувати вчених за алфавітом</button>
+                  <button class="filter" data-action="filter3">Відсортувати вчених за кількістю прожитих років</button>
+                  <button class="filter" data-action="filter4">Знайти вченого, який народився найпізніше</button>
+                  <button class="filter" data-action="filter5">Знайти рік народження Albert Einshtein</button>
+                  <button class="filter" data-action="filter6">Знайти вчених, прізвища яких починаються на на літеру “С”</button>
+                  <button class="filter" data-action="filter7">Видалити всіх вчених, ім’я яких починається на “А”</button>
+                  <button class="filter" data-action="filter8">Знайти вченого, який прожив найдовше і вченого,
+                     який прожив найменше</button>
+                  <button class="filter" data-action="filter9">Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
+               </div>
             </div>
 
 
@@ -306,5 +341,6 @@
       <script src="./js/slider.js"></script>
       <script src="./js/darkTheme.js"></script>
       <script src="./js/modal.js"></script>
+      <script src="./js/dropdownMenu.js"></script>
    </body>
 </html>
