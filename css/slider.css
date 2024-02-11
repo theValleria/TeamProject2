@@ -73,3 +73,22 @@
     border-radius: 20%;
 
 }
+
+.dots {
+    display: flex;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.dot {
+    display: block;
+    height: 3px;
+    width: 18px;
+    margin-right: 10px;
+    background-color: #C4C4C4;
+    border-radius: 3px;
+}
+
+.activ {
+    background-color: #000;
+}

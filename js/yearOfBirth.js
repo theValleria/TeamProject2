@@ -10,8 +10,14 @@ const checkLeapYear = () => {
 
     if (isNaN(birthYear)) {
         resultOutput.textContent = "Будь ласка, введіть коректне число.";
+        resultOutput.style.color = "black";
     } else {
-        const result = isLeapYear(birthYear) ? "Ви народилися у високосний рік!" : "Ви народилися у не високосний рік!";
-        resultOutput.textContent = result;
+        if(isLeapYear(birthYear)){
+            resultOutput.textContent = "Ви народилися у високосний рік!";
+            resultOutput.style.color = "green";
+        } else{
+            resultOutput.textContent = "Ви народилися у не високосний рік!";
+            resultOutput.style.color = "red";
+        }
     }
 }
